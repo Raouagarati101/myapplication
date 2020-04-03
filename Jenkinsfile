@@ -7,6 +7,15 @@ node{
       def mvnHome = tool name: 'maven-3', type: 'maven'
       sh "${mvnHome}/bin/mvn package"
    }
+   
+   stage('Archive') {
+	      dir('build/target') {
+	        archiveArtifacts artifacts: "${archiveName}", onlyIfSuccessful: true
+	      }
+	    }
+	    if (branch != 'master') {
+	      return
+	}
 
 }
 
