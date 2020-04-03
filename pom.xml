@@ -7,6 +7,20 @@
 	<version>0.0.7-SNAPSHOT</version>
 	<name>my-app</name>
 	<url>http://maven.apache.org</url>
+	<pluginRepositories>
+    <pluginRepository>
+        <id>central</id>
+        <url>http://gotoNexus</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>daily</updatePolicy>
+        </snapshots>
+        <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+        </releases>
+    </pluginRepository>
+         </pluginRepositories>
 
 	<dependencies>
 		<dependency>
