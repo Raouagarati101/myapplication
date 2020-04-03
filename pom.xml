@@ -32,7 +32,7 @@
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexus</id>
-		    <url>http://172.31.15.236:8081/repository/maven-snapshots/</url>
+		    <url>http://localhost:8081/repository/maven-snapshots/</url>
 		 </snapshotRepository>
 		
 		<repository>
